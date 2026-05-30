@@ -1,0 +1,2 @@
+"""Ghaleb Mall FastAPI backend."""
+
