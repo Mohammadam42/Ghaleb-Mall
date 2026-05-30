@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #141211;
+  background: #fffaf4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Tajawal", system-ui, sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(232, 93, 37, 0.10), transparent 26%),
+    linear-gradient(180deg, #fffaf4 0%, #ffffff 52%, #fff7ec 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.container-page {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(20, 18, 17, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md bg-ink px-5 py-3 font-bold text-white transition hover:bg-mallOrange;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border border-ink/10 bg-white px-5 py-3 font-bold text-ink transition hover:border-mallOrange hover:text-mallOrange;
+}
+
+.input {
+  @apply w-full rounded-md border border-ink/10 bg-white px-4 py-3 outline-none transition focus:border-mallOrange focus:ring-2 focus:ring-mallOrange/20;
+}
+
+.admin-card {
+  @apply rounded-lg border border-ink/10 bg-white p-5 shadow-sm;
+}
+
